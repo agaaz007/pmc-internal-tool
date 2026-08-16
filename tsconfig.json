@@ -1,6 +1,6 @@
 {
-  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "target": "ES2022",
     "rootDir": ".",
     "jsx": "preserve",
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
@@ -10,6 +10,11 @@
     "allowJs": false,
     "incremental": true,
     "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
     "plugins": [{ "name": "next" }],
     "paths": { "@/*": ["./src/*"] }
   },
