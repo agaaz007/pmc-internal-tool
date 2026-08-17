@@ -4,6 +4,10 @@ FieldBrief is an internal construction project-intelligence system. It calls eac
 
 The app ships with a populated read-only demo. It becomes live when PostgreSQL, an ElevenLabs phone number, webhook signing, and email delivery are configured.
 
+**Hosted dashboard:** [pmc-internal-tool.vercel.app](https://pmc-internal-tool.vercel.app)
+
+The Vercel deployment currently runs in demo-safe mode: the interface and APIs are live, while calls, persistence, and email delivery remain simulated until their production credentials are added. `CRON_SECRET` is configured and the scheduler endpoint is protected. Releases use the authenticated Vercel CLI until the Vercel GitHub integration is granted access to this repository.
+
 ## What is included
 
 - Portfolio dashboard with project, region, status, and search filters
